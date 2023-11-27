@@ -1,0 +1,507 @@
+* {
+  /*background-color: #0B010C;*/
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: #0b010c;
+}
+
+.contentMobile {
+  display: none;
+}
+.desktopTablet {
+  display: flex;
+  justify-content: space-around;
+  height: 8vh;
+}
+.desktopTablet h3 {
+  width: 40%;
+  text-align: center;
+  margin: auto;
+  color: #fff;
+}
+.desktopTablet div {
+  width: 60%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.links {
+  margin-left: 100px;
+}
+.links a {
+  color: #f00;
+  font-size: 20px;
+  margin-left: 50px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.links a:hover {
+  color: #00f;
+}
+.otro{
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.fullContent {
+  height: 94vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.infoIndex {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: space-around;
+  height: 30%;
+  gap: 15px;
+}
+.infoIndex p,
+.infoIndexAbout p {
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+}
+.infoIndex p:nth-child(2) span,
+.infoIndexAbout p:nth-child(2) span {
+  color: #f00;
+}
+.infoIndex p:nth-child(3),
+.infoIndexAbout p:nth-child(3) {
+  color: #00f;
+}
+
+.imgAbout {
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.infoIndexAbout {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.contentImg {
+  width: 50%;
+}
+.imgAbner {
+  width: 200px;
+  height: 200px;
+  background: #000;
+  border-radius: 50%;
+  border: 3px solid #42b4d8;
+  background-image: url(/media/yop.jpeg);
+  background-size: contain;
+  background-position: right;
+}
+.contentSkillsInfo {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.constentSkills {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  width: 50%;
+}
+.constentSkills div {
+  color: #fff;
+  width: 150px;
+  height: 50px;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+}
+.constentSkills img {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+}
+.contentInfo {
+  color: #fff;
+  width: 50%;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+/*Contact*/
+
+.contenFormu {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  height: 90%;
+}
+::placeholder {
+  color: #fff;
+}
+.form {
+  width: 50%;
+  margin: auto;
+}
+.form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 5px 0;
+  width: 70%;
+  margin: auto;
+}
+.form form input,
+.form form textarea {
+  font-size: 15px;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #f00;
+  background: transparent;
+  text-align: center;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+.form form textarea {
+  font-size: 15px;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #f00;
+  background: transparent;
+  text-align: center;
+  font-weight: 600;
+  resize: none;
+  transition: background 0.3s;
+}
+.form form textarea:focus,
+.form form input:focus {
+  outline: none;
+  background: #2f0433;
+}
+.btn{
+background: transparent;
+color: #fff;
+font-size: 20px;
+  width: 30%;
+  margin: auto;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  border: 1px solid #42b4d8;
+}
+.socialNetworks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  flex-direction: column;
+}
+.socialNetworks div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 90%;
+}
+.socialNetworks div a{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+ width: 130px;
+ text-decoration: none;
+ color: #fff;
+}
+/*.socialNetworks div a:nth-child(4){
+  flex-direction: column;
+ 
+}*/
+
+.socialNetworks img {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+}
+.btn:hover {
+  cursor: pointer;
+}
+/*Contact-socialNetwoks*/
+
+/*FIN DE -> Contact-socialNetwoks*/
+
+/*Fin contact*/
+/*CARD*/
+.contentCard {
+  padding: 5px;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 20px;
+}
+.card {
+  color: #fff;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: px 0px 0px 0px;
+}
+.card div:first-child {
+  text-align: center;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.card div:last-child {
+  height: 10%;
+}
+.card img {
+  width: 20px;
+  height: 20px;
+}
+.card:first-child {
+  border: 2px solid #42b4d8;
+}
+.card:nth-child(2) {
+  border-top: 2px solid #f00;
+}
+.card:nth-child(3) {
+  border: 2px solid #42b4d8;
+}
+.card:nth-child(4) {
+  border-left: 2px solid #42b4d8;
+  border-bottom: 2px solid #42b4d8;
+}
+.card:nth-child(5) {
+  border: 2px solid #42b4d8;
+}
+.card:last-child {
+  border-right: 2px solid #42b4d8;
+  border-bottom: 2px solid #42b4d8;
+}
+.card a {
+  background-color: transparent;
+  color: #fff;
+  width: 35%;
+  margin: 0 auto;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 3px;
+  border-radius: 5px;
+  border: 1px solid #42b4d8;
+}
+
+/* FIN DE CARDS*/
+footer {
+  color: #fff;
+  font-size: 20px;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+@media (max-width: 1000px) {
+  /*--------MENU NAVEGADOR---------*/
+  .desktopTablet {
+    display: none;
+  }
+  .contentMobile {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+  }
+ 
+  .hBtn {
+    background: #000000af;
+    border-bottom: 2px solid #f00;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .hBtn h3 {
+    color: #fff;
+  }
+  .hBtn button {
+    background: transparent;
+    border: none;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .hBtn button:hover {
+    cursor: pointer;
+  }
+  .hBtn button span {
+    display: block;
+    background: #42b4d8;
+    width: 100%;
+    height: 3px;
+  }
+  .links {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    right: 0;
+    top: 42px;
+    background: rgba(255, 0, 0, 0.362);
+    right: 1000px;
+    transition: right .5s;
+
+  }
+  .derecha {
+    right: 0px;
+    transition: right .5s;
+  }
+  .mobile {
+    z-index: 1;
+    height: 100%;
+  }
+  .linksMobile {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: #110113;
+    width: 70%;
+  }
+  .linksMobile a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    margin: 20px 0px;
+    margin-left: 20px;
+  }
+  /* -----FIN DE MENÚ NAVEGADOR-----*/
+  /* I N D E X */
+  .otro{
+    flex-direction: column;
+  }
+  .fullContent {
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+  }
+  .main {
+    height: 80vh;
+    padding: 55px 0px;
+  }
+  .infoIndex {
+    margin-top: 50px;
+  }
+  .infoIndex p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  /* A B O U T */
+  .mainAbout {
+    height: 250vh;
+  }
+  
+  .imgAbout {
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .contentSkillsInfo {
+    display: flex;
+    flex-direction: column;
+    height: 130vh;
+  }
+  .constentSkills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding-top: 50px;
+    height: 100%;
+  }
+
+  .infoIndexAbout p {
+    font-size: 20px;
+    text-align: center;
+  }
+  .contentInfo {
+    padding-top: 50px;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+  }
+  .contentInfo p {
+    text-align: center;
+  }
+  /* C O N T A C T */
+  .contenFormu{
+    flex-direction: column;
+  }
+  .form{
+    margin-top: 100px;
+    width: 100%;
+  }
+  .socialNetworks{
+    padding-top: 50px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 80%;  }
+  .socialNetworks div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 20px;
+  }
+  .socialNetworks div p{
+    display: none;
+  }
+  .form form input,
+.form form textarea {
+  width: 100%;
+}
+/* P R O J E C T S */
+
+  .contentCard{
+    display: flex;
+    flex-direction: column;
+    height: 200vh;
+    margin-top: 50px;
+  }
+  .contentCard div{
+    margin: auto;
+  }
+  .card div:last-child {
+    margin-bottom: 5px;
+  }
+
+  /* F O O T E R*/
+  footer{
+   margin-top: 150px;
+   padding-top: 50px;
+  }
+ footer div{
+  flex-direction: column;
+  margin: auto auto;
+ }
+  
+}
